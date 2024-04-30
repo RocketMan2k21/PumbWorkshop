@@ -63,11 +63,11 @@ public class AnimalController {
         }
 
         if(validAnimals.isEmpty()){
-            LOG.info("NO VALID ANIMALS!!");
+            LOG.info("No valid data in uploaded source");
             response.status(500);
         }else{
             validAnimals.forEach(animal -> animalDAO.addAnimal(animal));
-            LOG.info("Animals added successfully to database");
+            LOG.info("Data added successfully to database");
             response.status(200);
         }
 
