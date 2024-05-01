@@ -7,6 +7,7 @@ import org.example.service.Animal;
 import org.example.service.AnimalController;
 import org.example.service.CSVManager;
 import org.junit.jupiter.api.Test;
+import org.mockito.MockedStatic;
 import spark.Request;
 import spark.Response;
 
@@ -94,6 +95,7 @@ public class AnimalControllerTest {
         assertTrue(result.contains(expectedJson));
     }
 
+
     @Test
     public void isValidAnimal_valid_Test(){
         Animal animal = new Animal();
@@ -112,6 +114,8 @@ public class AnimalControllerTest {
         Animal animal = new Animal();
         assertFalse(AnimalController.isValidAnimal(animal));
     }
+
+
 
 
 }

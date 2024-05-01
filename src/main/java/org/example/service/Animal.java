@@ -47,7 +47,7 @@ public class Animal {
         this.cost = cost;
     }
 
-    public void eveluateCategory() {
+    public void evaluateCategory() {
         if(cost >= 0 && cost <= 20)
             category = 1;
         else if(cost >= 21 && cost <= 41)

@@ -56,7 +56,7 @@ public class AnimalController {
         // Filter animals based on the checkAnimal method
         for (Animal animal : animals) {
             if (isValidAnimal(animal)) {
-                animal.eveluateCategory();
+                animal.evaluateCategory();
                 LOG.info(animal.toString());
                 validAnimals.add(animal);
             }
